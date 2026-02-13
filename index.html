@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Construction Planning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Generative AI Construction Planning</h1>
+
+    <div class="container">
+        <label>Project Name:</label>
+        <input type="text" id="projectName">
+
+        <label>Project Area (sq ft):</label>
+        <input type="number" id="area">
+
+        <label>Budget (₹):</label>
+        <input type="number" id="budget">
+
+        <label>Project Type:</label>
+        <select id="type">
+            <option value="residential">Residential</option>
+            <option value="commercial">Commercial</option>
+        </select>
+
+        <button onclick="generatePlan()">Generate AI Plan</button>
+
+        <div id="output"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
